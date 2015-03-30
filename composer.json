@@ -1,12 +1,12 @@
 {
-  "name": "vendor_name/package_name",
-  "description": "description_text",
+  "name": "peterjohnjoseph/wordpress-skeleton-composer",
+  "description": "Wordpress starter template for managing environments and dependencies",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
-      "name": "author's name",
-      "email": "email@example.com"
+      "name": "Peter John Joseph",
+      "email": "pj@peterjohnjoseph.com"
     }
   ]
 }

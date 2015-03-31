@@ -34,8 +34,9 @@
     }
   ],
   "require": {
+    "composer/installers": "1.0.*",
     "johnpbloch/wordpress": "4.1.1",
-    "composer/installers": "1.0.*"
+    "wpackagist-plugin/jetpack": "3.4.1"
   },
   "suggest": {
     "wp-cli/wp-cli": "Command Line Interface for controlling Wordpress."

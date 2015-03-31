@@ -28,7 +28,7 @@ define( 'DB_HOST', 'localhost' ); // Probably 'localhost'
 // ===========================================================================================
 // Custom Content Directory. Only change if you are moving the content folder per environment.
 // ===========================================================================================
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
+define( 'WP_CONTENT_DIR', dirname( __DIR__ ) . '/content' );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
 
 // =============================================================================

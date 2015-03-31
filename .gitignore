@@ -5,4 +5,3 @@
 /sql-dump-*.sql
 /db-sync
 /content/upgrade/
-.htaccess

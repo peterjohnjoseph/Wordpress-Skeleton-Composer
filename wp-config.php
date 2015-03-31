@@ -20,7 +20,7 @@
 // ====================================
 // Environment specific configurations.
 // ====================================
-define('APP_ROOT', dirname(__DIR__));
+define('APP_ROOT', dirname(__FILE__));
 define('APP_ENV', getenv('APPLICATION_ENV'));
 
 if (file_exists(APP_ROOT . '/config/local-config.php')) {
@@ -32,7 +32,7 @@ if (file_exists(APP_ROOT . '/config/local-config.php')) {
 // =========================
 // Custom Content Directory.
 // =========================
-define( 'WP_CONTENT_DIR', dirname( __DIR__ ) . '/content' );
+define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
 
 // ===============================================================
@@ -64,8 +64,8 @@ define( 'WP_DEBUG_DISPLAY', false );
 // =========================================================
 // Load a Memcached config if we have one. If not disregard.
 // =========================================================
-if ( file_exists( dirname( __DIR__ ) . '/memcached.php' ) )
-    $memcached_servers = include( dirname( __DIR__ ) . '/memcached.php' );
+if ( file_exists( dirname( __FILE__ ) . '/memcached.php' ) )
+    $memcached_servers = include( dirname( __FILE__ ) . '/memcached.php' );
 
 // ============================================================================================
 // This can be used to programatically set the stage when deploying (e.g. production, staging).
@@ -77,7 +77,7 @@ define( 'STAGING_DOMAIN', '%%WP_STAGING_DOMAIN%%' ); // Does magic in WP Stack t
 // Bootstrap WordPress.
 // ====================
 if ( !defined( 'ABSPATH' ) )
-    define( 'ABSPATH', dirname( __DIR__ ) . '/wp/' );
+    define( 'ABSPATH', dirname( __FILE__ ) . '/wp/' );
 require_once( ABSPATH . 'wp-settings.php' );
 
 // ====================
